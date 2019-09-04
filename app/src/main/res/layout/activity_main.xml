@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 - Dia de hoje">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/radio1_1">
+
+        <RadioButton
+            android:id="@+id/radio1_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dia 10" />
+
+        <RadioButton
+            android:id="@+id/radio1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dia 4" />
+
+        <RadioButton
+            android:id="@+id/radio1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dia 15" />
+
+        <RadioButton
+            android:id="@+id/radio1_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dia21" />
+    </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estamos no mes"/>
+
+    <RadioGroup
+        android:id="@+id/radio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/radio2_1">
+
+        <RadioButton
+            android:id="@+id/radio2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mes 09" />
+
+        <RadioButton
+            android:id="@+id/radio2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mes 12" />
+
+        <RadioButton
+            android:id="@+id/radio2_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mes 03" />
+
+        <RadioButton
+            android:id="@+id/radio2_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mes 07" />
+
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estamos no ano"/>
+
+    <RadioGroup
+        android:id="@+id/radio3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/radio3_1">
+
+        <RadioButton
+            android:id="@+id/radio3_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1980" />
+
+        <RadioButton
+            android:id="@+id/radio3_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2010" />
+
+        <RadioButton
+            android:id="@+id/radio3_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1800" />
+
+        <RadioButton
+            android:id="@+id/radio3_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019" />
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        android:id="@+id/botao"
+        android:onClick="verificar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultado"/>
+</LinearLayout>
